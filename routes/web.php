@@ -17,6 +17,10 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('posts.index');
 
+Route::get('/posts/create', [PostController::class, 'create'])->middleware(['auth', 'verified'])->name('posts.create');
+
+Route::post('/posts', [PostController::class, 'store'])->middleware(['auth', 'verified'])->name('posts.store');
+
 /*
 Route::get('/dashboard', function () {
     return view('dashboard');
