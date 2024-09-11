@@ -29,4 +29,4 @@
         </div>
         <button type="submit" class="btn btn-outline-primary">投稿</button>
     </form>
-@endsection
+ @endsection
